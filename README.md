@@ -7,7 +7,7 @@ This application enables everybody to see the wisdom of the Sokrates of our time
 
 
 ### About this project
-Kanye-Quotes uses a Flask backend to retrieve Tweets from Kanye West. The backend tries to find nouns in the tweet with the help of the Natural Language Toolkit.
+Kanye-Quotes uses a Flask backend to retrieve quotes from Kanye West. By using the Natural Language Toolkit, the backend tries to find nouns in the quote.
 If nouns are found, it retrieves a matching image to this noun from unsplash.com, using their Developer API, if not it returns a random image.
 
 ### Demo

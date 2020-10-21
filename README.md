@@ -1,6 +1,6 @@
 # Kanye-Quotes
 
-![Image of Website](https://octodex.github.com/images/yaktocat.png)
+![Image of Website](./src/assets/github-readme-image.PNG)
 
 Kanye is one of the greatest philosophers of our time.
 This application enables everybody to see the wisdom of the Socrates of our time complemented with a matching image.

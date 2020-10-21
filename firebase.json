@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/kanye-quotes",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -12,4 +12,4 @@ If nouns are found, it retrieve a matching image to this noun from unsplash.com 
 
 ### Demo
 
-check it out under: https://kanye-quote.web.app/
+check it out under: https://kanye-quote-ac0ba.web.app/

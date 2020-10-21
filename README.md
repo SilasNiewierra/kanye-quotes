@@ -13,3 +13,5 @@ If nouns are found, it retrieves a matching image to this noun from unsplash.com
 ### Demo
 
 check it out under: https://kanye-quote-ac0ba.web.app/
+
+Since the backend is hosted on heroku, please allow for a delayed response for the server to wake up.

@@ -1,0 +1,163 @@
+[debug] [2020-10-21T08:27:15.379Z] ----------------------------------------------------------------------
+[debug] [2020-10-21T08:27:15.381Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-21T08:27:15.381Z] CLI Version:   8.12.1
+[debug] [2020-10-21T08:27:15.381Z] Platform:      win32
+[debug] [2020-10-21T08:27:15.382Z] Node Version:  v14.13.0
+[debug] [2020-10-21T08:27:15.382Z] Time:          Wed Oct 21 2020 10:27:15 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2020-10-21T08:27:15.382Z] ----------------------------------------------------------------------
+[debug] [2020-10-21T08:27:15.383Z] 
+[debug] [2020-10-21T08:27:15.388Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-21T08:27:15.389Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Coding\kanye\kanye-quotes
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-10-21T08:27:26.198Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-10-21T08:27:26.472Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Oct 2020 08:27:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project kanye-quote (kanye-quote) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-10-21T08:27:55.853Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-10-21T08:27:55.958Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","content-length":"1429","date":"Wed, 21 Oct 2020 07:44:37 GMT","expires":"Wed, 21 Oct 2020 08:34:37 GMT","last-modified":"Thu, 15 Oct 2020 21:32:42 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"2604","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at E:\Coding\kanye\kanye-quotes 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=848616678&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-10-21T08:28:09.186Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"1f96f24edb57d11605a6","redirect_uri":"http://localhost:9005","state":"848616678"}
+[debug] [2020-10-21T08:28:09.540Z] <<< HTTP RESPONSE 200 {"date":"Wed, 21 Oct 2020 08:28:14 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"13ffc7af6c8f79725c966c7d5727f9d5\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"DACB:F283:E47AECD:152703C9:5F8FF11E"}
+[debug] [2020-10-21T08:28:09.541Z] >>> HTTP REQUEST GET https://api.github.com/user  
+ 
+[debug] [2020-10-21T08:28:09.829Z] <<< HTTP RESPONSE 200 {"date":"Wed, 21 Oct 2020 08:28:15 GMT","content-type":"application/json; charset=utf-8","content-length":"1449","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"2e89e2bb3c6314181824a34d5d4c15227cc5e2b529fd9f04934363c7ac5951b7\"","last-modified":"Wed, 21 Oct 2020 06:59:12 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4999","x-ratelimit-reset":"1603272495","x-ratelimit-used":"1","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DACC:12BEC:10BD806A:135F70E6:5F8FF11E"}
+[info] 
+[info] +  Success! Logged into GitHub as SilasNiewierra 
+[info] 
+[debug] [2020-10-21T08:28:40.440Z] >>> HTTP REQUEST GET https://api.github.com/repos/kanye-quotes/actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-10-21T08:28:40.643Z] <<< HTTP RESPONSE 404 {"date":"Wed, 21 Oct 2020 08:28:45 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4998","x-ratelimit-reset":"1603272495","x-ratelimit-used":"2","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"DAD5:179A:7BB1842:8DF5A81:5F8FF13D"}
+[debug] [2020-10-21T08:28:40.643Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-10-21T08:28:51.019Z] >>> HTTP REQUEST GET https://api.github.com/repos/SilasNiewierra/kanye-quotes/actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-10-21T08:28:51.274Z] <<< HTTP RESPONSE 200 {"date":"Wed, 21 Oct 2020 08:28:56 GMT","content-type":"application/json; charset=utf-8","content-length":"84","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"0b95d8735e8fac84372a9ba23ea76a9ba6389db005457a5d0e2ac0d598215f27\"","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4997","x-ratelimit-reset":"1603272495","x-ratelimit-used":"3","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DAD6:624B:2005451F:25051A2D:5F8FF148"}
+[debug] [2020-10-21T08:28:51.277Z] >>> HTTP REQUEST GET https://api.github.com/repos/SilasNiewierra/kanye-quotes  
+ 
+[debug] [2020-10-21T08:28:51.562Z] <<< HTTP RESPONSE 200 {"date":"Wed, 21 Oct 2020 08:28:56 GMT","content-type":"application/json; charset=utf-8","content-length":"5527","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"ba63f608b8bf03b7122574ba01824b36f959076ec801d0cdc937720d40e43636\"","last-modified":"Tue, 20 Oct 2020 06:18:13 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4996","x-ratelimit-reset":"1603272495","x-ratelimit-used":"4","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DAD7:7C68:1FCFF813:24C55FAA:5F8FF148"}
+[debug] [2020-10-21T08:28:51.565Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/kanye-quote/serviceAccounts  
+ {"accountId":"github-action-305608134","serviceAccount":{"displayName":"GitHub Actions (SilasNiewierra/kanye-quotes)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository SilasNiewierra/kanye-quotes"}}
+[debug] [2020-10-21T08:28:52.675Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Oct 2020 08:28:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-21T08:28:52.676Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/kanye-quote/serviceAccounts/github-action-305608134@kanye-quote.iam.gserviceaccount.com  
+ 
+[debug] [2020-10-21T08:28:52.676Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/kanye-quote:getIamPolicy  
+ 
+[debug] [2020-10-21T08:28:53.006Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Oct 2020 08:28:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=231","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-21T08:28:53.081Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Oct 2020 08:28:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-21T08:28:53.082Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/kanye-quote:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwWyKhdSXAo=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-wjy5l@kanye-quote.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-951234935221@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-wjy5l@kanye-quote.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:niewierra.silas@gmail.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-305608134@kanye-quote.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-305608134@kanye-quote.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-305608134@kanye-quote.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2020-10-21T08:28:54.227Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Oct 2020 08:28:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1052","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-21T08:28:54.228Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/kanye-quote/serviceAccounts/github-action-305608134@kanye-quote.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2020-10-21T08:28:54.900Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Oct 2020 08:29:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-305608134 with Firebase Hosting admin permissions. 
+[debug] [2020-10-21T08:28:54.925Z] >>> HTTP REQUEST PUT https://api.github.com/repos/SilasNiewierra/kanye-quotes/actions/secrets/FIREBASE_SERVICE_ACCOUNT_KANYE_QUOTE  
+ {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2020-10-21T08:28:55.653Z] <<< HTTP RESPONSE 201 {"date":"Wed, 21 Oct 2020 08:29:00 GMT","content-type":"application/json; charset=utf-8","content-length":"2","server":"GitHub.com","status":"201 Created","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"0a1903b789bcd66df8b51c6b0f9470ccf493140400ccb5b847b400d3d8dd024d\"","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4995","x-ratelimit-reset":"1603272495","x-ratelimit-used":"5","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DADD:DBD9:11B413B8:146EB6D9:5F8FF14C"}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_KANYE_QUOTE. 
+[info] i  You can manage your secrets at https://github.com/SilasNiewierra/kanye-quotes/settings/secrets. 
+[info] 
+[info] 
+[info] +  Created workflow file E:\Coding\kanye\kanye-quotes\.github/workflows/firebase-hosting-pull-request.yml 
+[debug] [2020-10-21T08:32:14.631Z] ----------------------------------------------------------------------
+[debug] [2020-10-21T08:32:14.634Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-21T08:32:14.634Z] CLI Version:   8.12.1
+[debug] [2020-10-21T08:32:14.634Z] Platform:      win32
+[debug] [2020-10-21T08:32:14.634Z] Node Version:  v14.13.0
+[debug] [2020-10-21T08:32:14.635Z] Time:          Wed Oct 21 2020 10:32:14 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2020-10-21T08:32:14.635Z] ----------------------------------------------------------------------
+[debug] [2020-10-21T08:32:14.635Z] 
+[debug] [2020-10-21T08:32:14.640Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-21T08:32:14.641Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Coding\kanye\kanye-quotes
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-10-21T08:32:21.583Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/kanye-quote  
+ 
+[debug] [2020-10-21T08:32:21.846Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 21 Oct 2020 08:32:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project kanye-quote (kanye-quote) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-10-21T08:32:33.247Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-10-21T08:32:33.348Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","content-length":"1429","date":"Wed, 21 Oct 2020 08:26:43 GMT","expires":"Wed, 21 Oct 2020 09:16:43 GMT","last-modified":"Thu, 15 Oct 2020 21:32:42 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"355","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] +  Wrote dist/index.html 
+[info] 
+[info] i  Detected a .git folder at E:\Coding\kanye\kanye-quotes 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1005686484&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-10-21T08:32:33.788Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"278e4c7ef48bb3475d47","redirect_uri":"http://localhost:9005","state":"1005686484"}
+[debug] [2020-10-21T08:32:34.055Z] <<< HTTP RESPONSE 200 {"date":"Wed, 21 Oct 2020 08:32:39 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"ecca88930ab19ff749dfc1bdff9bd96a\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"DAEC:506B:96D65B8:DCB6D2D:5F8FF227"}
+[debug] [2020-10-21T08:32:34.056Z] >>> HTTP REQUEST GET https://api.github.com/user  
+ 
+[debug] [2020-10-21T08:32:34.363Z] <<< HTTP RESPONSE 200 {"date":"Wed, 21 Oct 2020 08:32:39 GMT","content-type":"application/json; charset=utf-8","content-length":"1449","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"e7d6b11ce1001dcacabf47208a1bd30910b0dac9db860304932656a04382c28c\"","last-modified":"Wed, 21 Oct 2020 06:59:12 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4994","x-ratelimit-reset":"1603272495","x-ratelimit-used":"6","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DAEE:71A0:1F98D991:248DF412:5F8FF227"}
+[info] 
+[info] +  Success! Logged into GitHub as SilasNiewierra 
+[info] 

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kanye-quote": {
+      "hosting": {
+        "kanye-quotes": [
+          "kanye-quote"
+        ]
+      }
+    }
+  }
+}

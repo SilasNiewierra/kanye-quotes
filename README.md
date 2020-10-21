@@ -3,7 +3,7 @@
 ![Image of Website](./src/assets/github-readme-image.PNG)
 
 Kanye is one of the greatest philosophers of our time.
-This application enables everybody to see the wisdom of the Socrates of our time complemented with a matching image.
+This application enables everybody to see the wisdom of the Sokrates of our time complemented with a matching image.
 
 
 ### About this project
